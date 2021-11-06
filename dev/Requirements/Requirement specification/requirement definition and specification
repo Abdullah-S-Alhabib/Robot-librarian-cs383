@@ -1,0 +1,39 @@
+Requirement definitions:
+1.Robots shall organize returned or new books according to genre then name using Barcode.
+2.The customer can request to borrow a book through automated means, and be able to know the books available, and find books through title, author(s), or genre.
+3.books must be dusted regularly.
+
+Requirement specification:
+    1.1 There must be a database for books, using barcodes generated using ISBN as unique ID, and contain title, genre, version and production year.
+    1.2 There must be barcodes for genres and sub-genres, in order to organize books through genre, then sub-genre, then shelf number.
+    1.3 There must be designated extra temporary shelves, with name "temporary" as the genre and "extra" as sub-genre.
+    1.4 If the extra shelves have a book, the librarians must be notified, so as to either expand the needed genre/sub-genre or cull it.
+    1.5 The robot will have to organize books according to title alphabet after finding genre.
+    1.6 In case the book must be placed in between two books that already are placed, 
+    the robot will have to safely shift the books that come after the held one spot until meeting a free spot, then put the held one in the correct position.
+    1.7 In case the shelves designated for the genre are full, the book will then be placed in the extra temporary 
+    shelf and send notification of doing so to librarians notification center.
+    1.8 Using the robot functionality, put the book on the shelf after finding the right spot.
+    
+    2.1 There must be a user interface for the customer.
+    2.2 The commands the customer can issue using the user interface are: 
+            a: Borrow book: which will ask for the customer to log in, if the customer did not register or have forgetten his/her details,
+            he/she will be redirected towards the help desk with human employees.
+            b: Return book: which will open a tray and request the customer to put the book in there, 
+            then automatically process the return using ISBN (use ISBN to find customer account and process "return success").
+            c: Find if book is available: Customer can use title, author, genre or ISBN to find a list of books with specified filters, 
+            information on each book includes: title, author, version, genre and year.
+            d: Request book for local reading: which will run the same process of finding books, 
+            then after that the bot will lead a customer to a free reading table, then retrieve the book and give it to the customer.
+    
+   
+ 
+    3.1 Every day, the bots will use their dusting functionality at the beginning of work hours, cleaning books and shelves of dust.
+    3.2 The process goes like this:
+            a: At the start of work hours, X amount of bots are assigned cleaning duty.
+            b: The number of bots will be assigned by the librarians and should be easily changeable.
+            c: The software will devide the number of shelves (taken from the database) by the number of cleaning bots, 
+            then be assigned the result as shelves to clean.
+            d: The software will then assign each bot to the shelves starting from the shelf with the number (amount of shelves already assigned)
+            and ending with the shelf with the number (amount of shelves already assign + the result of the division shelves/bots), 
+            this new stopping point is the starting point assigned to the next bot.
