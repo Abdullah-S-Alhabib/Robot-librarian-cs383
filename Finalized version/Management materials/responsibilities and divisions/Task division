@@ -1,44 +1,35 @@
 The project has been divided into 4 categories according to the group project assessment provided by Dr. Faisal:
 Group management:
   -Main jobs:
-     1. Documenting meetings
-     2. Managing tasks and subtasks: assign responsibilities 
-     3. Organizing and manage meetings 
-     4. Managing resources and time 
-     5. Organizing repository 
-     6. Organizing regularmeetings with the client 
+ 1. Managing tasks and subtasks: assign responsibilities 
+ 2. Managing resources and time allocation
+ 3. Organizing repository 
   -Responsibility of: Abdullah Alhabib.
   
-Requirements:
+Documentation:
   -main jobs:
-    1. Documenting requirements and specification (documented in SRS)
-    2. Planning for requirements engineering including methods used for gathering, analysis andvalidation of requirements
-    3. Addressing any functional requirements 
-    4. Addressing any non-functional requirements 
-    5. Identifying metrics used for any non-functional
-  -responsibility of:
-    1.Abdullah Alhabib.
-    2.Sultan ALodaib.
-    3.Mohammed Alrobaian.
+    1. Writing SRS
+    2. Writing SDD 
+    3. Documenting, managing, and organizing meetings with group and clients
+  -responsibility of: Abdullah Alhabib.
     
 System/software modelling:
   -main jobs:
-    1. SDD documentation
-    2. Using models: use case, structural, behavioral (statediagram only)using modeling tools such as Lucidchart, yEd, StarUML, etc.
-    3. Describing data processing using DFD of important selected operations by client.
-    4. Using architecture model and reasons (documented in SDD)
+    1. Draw UML
+    2. Draw Sequence diagrams
+    3. Draw State Diagrams
   -responsibility of:
     1. Abdullah Alhasan.
-    2.Sultan Alharbi.
+    2. Sultan Alharbi.
+    3. Sultan Alodaib
 
 Implementation:
 -Main jobs:
 	1. Code implementation (API only).
-	2. Basic test API implementation.
-	3. Well-documenting of code and description of API.
-	4. Using basic design patterns.
+	2. Well-documenting of code and description of API.
 -responsibility of:
-	1.Mothanna Almohaimid.
-	2.Megrin Almarshood.
+	1. Mothanna Almohaimid.
+	2. Megrin Almarshood.
+	3. Mohammed AlRubayan
 	
 	
